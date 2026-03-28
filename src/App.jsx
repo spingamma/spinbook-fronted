@@ -43,9 +43,13 @@ const App = () => {
 
   // Polling cada 3 segundos
   useEffect(() => {
-    fetchAppointments();
-    const interval = setInterval(fetchAppointments, 3000);
-    return () => clearInterval(interval);
+    // ... tu código de fetch
+
+    const intervalo = setInterval(() => {
+      fetchAppointments(); // o como se llame tu función
+    }, 20000); // <-- Este es el número que hace las peticiones tan seguido
+
+    return () => clearInterval(intervalo);
   }, []);
 
   // --- MANEJO DE EVENTOS ---

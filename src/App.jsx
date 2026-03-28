@@ -5,7 +5,7 @@ import {
   MessageCircle, FileText, CalendarPlus, Plus, X
 } from 'lucide-react';
 
-const API_BASE_URL = 'https://spinbook-backend.onrender.com';
+const API_BASE_URL = 'https://spinbook-backend.onrender.com/api/appointments';
 
 const App = () => {
   const colors = {
